@@ -1,0 +1,106 @@
+*{
+    margin:0px;
+    padding:0px;
+}
+
+/* Navigation Bar */
+#navbar{
+    display: flex;
+    align-items: center;
+    background-color:black;
+    height: 60px;
+    position: sticky;
+    top: 0px;
+}
+
+#logo{
+    margin: 10px 50px;
+}
+
+#logo img{
+    margin: 18px 12px;
+    height: 60px;
+}
+
+#navbar ul{
+    display: flex;
+}
+
+#navbar ul li{
+    list-style:none;
+    font-size:1.3rem;
+}
+
+#navbar ul li a{
+    text-decoration: none;
+    color:white;
+    display: block;
+    padding: 5px 35px;
+    border-radius: 10px;
+}
+
+#navbar ul li a:hover{
+    color:black;
+    background-color: white;
+}
+
+/* Home Section */
+
+#home{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    height: 100%;
+    padding:100px 175px;
+}
+
+#home::before{content: "";
+    background:url('./img/bg2.jpg') no-repeat center center/cover;
+    position: absolute;
+    top:0px;
+    left:0px;
+    height: 100%;
+    width:100%;
+    z-index: -1;
+    opacity: 0.8;
+}
+.h-primary{
+    font-size:3.2rem;
+    padding:10px;
+}
+.h-secondary{
+    font-size:2.1rem;
+    padding:12px;
+    color:black;
+
+}
+.center{
+    text-align:center;
+}
+
+
+/*customer section*/
+.centertable{
+    margin-left: auto;
+  margin-right: auto;
+  border: 1px solid black;
+  /*font-size: 1.2rem;*/
+}
+td,th{
+    border: 1px solid black;
+    padding: 10px;
+}
+#viewcustomer{
+    padding: 25px 12px;
+    font-weight: bold;
+}
+
+footer{
+    position: fixed;
+    bottom: 0px;
+    background: black;
+    color: red;
+    padding:5px 20px;
+    width: 100%;
+}
